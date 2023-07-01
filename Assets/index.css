@@ -1,0 +1,83 @@
+a {
+    color: #004066;
+    display: inline-block;
+    text-decoration: none;
+}
+
+table {
+    text-align: left;
+    white-space: nowrap;
+    width: 90%;
+    border-collapse: collapse;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: transparent;
+    border-spacing: 0;
+}
+
+table tr .indexcolname {
+    width: 90%;
+}
+
+table tr .indexcolsize {
+    text-align: center;
+}
+
+table tr .indexcollastmod, table tr .indexcolsize {
+    padding: 10px 50px;
+    font-size: 15px;
+    font-family: roboto;
+}
+
+table th, table td {
+    padding: 7px;
+}
+
+th {
+    text-align: left;
+}
+
+table tr .indexcolicon img {
+    width: 15px;
+    vertical-align: middle;
+    border: 0px;
+}
+
+
+table tr.even-parentdir a {
+    font-weight: 600;
+    font-family: roboto;
+}
+table tr .indexcolname a, table tr .indexcollastmod a, table tr .indexcolsize a {
+    border-bottom: 1px solid transparent;
+}
+
+table tr .indexcollastmod, table tr .indexcolsize {
+    padding: 10px 50px;
+    font-size: 15px;
+    font-family: roboto;
+}
+
+.indexcolname a{
+   display: inline-block;
+   position: relative;
+   color: #004066;
+ }
+ 
+ .indexcolname a:after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   transform: scaleX(0);
+   height: 2px;
+   bottom: 0;
+   left: 0;
+   background-color: #004066;
+   transform-origin: bottom right;
+   transition: transform 0.25s ease-out;
+ }
+ 
+ .indexcolname a:hover:after {
+   transform: scaleX(1);
+   transform-origin: bottom left;
+ }
